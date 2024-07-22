@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --BOX-SHADOW: 0px -3px 8px 5px rgba(0, 0, 0, 0.349);
+  --FONT-COLOR1: rgb(248, 246, 246);
+  --BACKGROUND-COLOR: rgb(241, 241, 241);
+  --ZERO-PX-VALUE: 0px;
+  --BORDER-FOR-MAIN: 2px solid black;
+}
+
+body {
+  background-color: var(--BACKGROUND-COLOR);
+  padding-top: 50px;
+}
+
+.items p {
+  font-family: raleway;
+  font-weight: 800;
+  margin-left: 3%;
+  margin-top: 1px;
+  color: rgb(56, 56, 56);
+  font-size: 1.4rem;
+  -webkit-text-stroke: 0.5px rgba(255, 0, 0, 0.411);
+}
+
+.menu-container {
+  display: flex;
+  padding: 30px 25px 30px;
+  column-gap: 10px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  white-space: nowrap;
+}
+.more-items-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+.more-items {
+  color: rgb(236, 236, 236);
+}
+.arrow {
+  text-decoration: none;
+  opacity: 0; /* Hide the arrow by default */
+}
+
+.more-items:hover{
+  text-decoration: underline; /* Underline the text on hover */
+  cursor: pointer;
+}
+
+.more-items:hover .arrow {
+  opacity: 1; /* Show the arrow instantly when hovering over .more-items */
+}
+.more-items:active {
+ color: rgb(207, 207, 207);
+}
+.order-btn {
+  padding: 5px 12px;
+  background: linear-gradient(rgb(211, 0, 0), rgb(206, 0, 0), rgb(211, 0, 0));
+  border: none;
+  margin-left: 20px;
+  margin-right: 10px;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.466);
+  margin-top: 1px;
+  border-radius: 15px;
+  color: rgb(228, 228, 228);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+.hr-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 15px 0px;
+}
+hr {
+  border: 1px solid rgb(44, 44, 44);
+  width: 100%;
+  max-width: 700px;
+}
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100%;
+  /* Optional: Add a max-width to control the container's size */
+  max-width: 100%;
+}
+
+.iframe {
+  width: 100%;
+  height: auto;
+  padding: 0px 15px 0px;
+  max-width: 560px;
+  aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+  border: none; /* Optional: Remove default border */
+}
+.order-btn:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.order-btn:active {
+  background: rgb(163, 0, 0);
+}
+
+ html {
+  scroll-behavior: smooth;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Aligns items to the left */
+  padding: 0px 50px 30px;
+  column-gap: 0px;
+  row-gap: 20px;
+}
+h4 {
+  font-family: raleway;
+  font-weight: 700;
+}
+.footer-contact {
+  display: flex;
+  column-gap: 10px;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-column {
+  width: 100%;
+  max-width: 190px;
+}
+.underline {
+  width: 40px;
+  height: 3px;
+  margin-bottom: 15px;
+  margin-top: 3px;
+  background-color: rgb(145, 0, 0);
+}
+footer li {
+  font-size: 0.95em;
+  margin-bottom: 8px;
+  list-style-type: none;
+}
+footer li a{
+  text-decoration: none;
+  color: rgb(153, 153, 153);
+}
+footer li a:hover {
+  text-decoration: underline;
+}
+.order {
+  background-color: rgb(219, 219, 219);
+  margin-top: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menuitem {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  width: 300px;
+}
+#header {
+  background-image: url('https://cdna.artstation.com/p/assets/images/images/057/726/786/large/mohamed-mohasin-malevolent-shrine.jpg?1672480136');
+  background-position: top;
+  height: 50px;
+  position: fixed;
+  top: var(--ZERO-PX-VALUE);
+  left: var(--ZERO-PX-VALUE);
+  right: var(--ZERO-PX-VALUE);
+  z-index: 100;
+  box-shadow: var(--BOX-SHADOW);
+  color: var(--FONT-COLOR1);
+}
+label {
+  font-family: raleway;
+  font-weight: 700;
+}
+#header h1 {
+  font-size: 28px;
+  user-select: none;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  margin: 10px 0px 0px 10px;
+}
+input {
+  padding: 4px;
+  margin-top: 2px;
+  border: 1px solid grey;
+  margin-bottom: 2px;
+  width: 180px;
+  font-size: 0.8rem;
+}
+form button {
+  background-color: rgb(24, 24, 24);
+  padding: 7px;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 300;
+  border: 1px solid transparent;
+  font-family: raleway;
+  color: #fff;
+}
+form button:hover {
+  cursor: pointer;
+  border: 1px solid grey;
+}
+form button:active {
+  opacity: 0.8;
+}
+#header-img {
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#nav-bar ul {
+  margin: -31px 0px 0px 782px;
+  display: flex;
+  list-style-type: none;
+}
+
+#nav-bar ul a {
+  color: var(--FONT-COLOR1);
+  text-decoration: none;
+  padding: 10px var(--ZERO-PX-VALUE) 10px;
+  transition: color 0.10s;
+}
+
+#nav-bar ul a:hover {
+  color: rgb(197, 197, 197);
+}
+
+#nav-bar ul a:active {
+  color: rgb(179, 179, 179);
+}
+#nav-bar ul a {
+  margin: 15px;
+  font-size: 1.2em;
+}
+form :nth-child(2) {
+  margin-top: 8px;
+}
+#header div {
+  display: flex;
+  margin-left: 5%;
+  justify-content: left;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  color: white;
+  background-color: rgb(17, 17, 17);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.473);
+}
+.limited-container {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+
+.img1 {
+  display: block;
+  padding: 1px;
+  margin: 30px auto 30px;
+  height: auto;
+  max-width: 487.72px;
+  width: 100%;
+  border: 3px solid rgb(37, 37, 37);
+  border-radius: 10px;
+}
+
+.q1, .q2 {
+  position: relative;
+}
+
+.q1 {
+  bottom: 5px;
+  right: 2px;
+}
+
+.q2 {
+  top: 20px;
+  left: 5px;
+}
+
+.cite {
+  font-family: Raleway;
+  font-weight: 500;
+  position: relative;
+  bottom: 3px;
+  left: 5px;
+  white-space: nowrap;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.important-note {
+  text-align: center;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  display: block;
+  font-family: raleway;
+  font-size: 1rem;
+}
+
+.Quote {
+  background-color: rgb(194, 0, 0);
+  display: flex;
+  border-top: 2px double rgb(73, 73, 73);
+  border-bottom: 2px double rgb(73, 73, 73);
+  justify-content: center;
+  font-weight: bold;
+  text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.781);
+  padding: 15px;
+}
+
+.history-container {
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+}
+
+.history {
+  font-size: 1.2rem;
+  line-height: 28px;
+  margin-left: -10px;
+  font-family: Raleway;
+  font-weight: 400;
+  width: 100%;
+  max-width: 700px;
+}
+
+.history-link {
+  color: rgb(173, 0, 0);
+}
+
+.history-link:hover {
+  color: rgb(211, 0, 0);
+}
+
+.history-link:active {
+  color: rgb(240, 0, 0);
+}
+
+.quote-p {
+  width: 450px;
+  line-height: 48px;
+  font-size: 2.3rem;
+  text-align: center;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+}
